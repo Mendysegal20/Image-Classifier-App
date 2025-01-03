@@ -1,0 +1,6 @@
+streamlit
+threading
+torch
+Pillow
+networkx
+torchvision
