@@ -25,13 +25,6 @@ emojis = {
 }
 
 
-def close_server():
-    os.kill(os.getpid(), signal.SIGTERM)
-
-if st.button("❌ Close App"):
-    close_server()
-
-
 st.markdown("<h1 style='text-align: center; color: #e3bf52;'>Image Recognizer</h1>", unsafe_allow_html=True)
 user_img = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
 
