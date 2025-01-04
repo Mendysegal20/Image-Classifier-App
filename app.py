@@ -25,7 +25,11 @@ emojis = {
 }
 
 
-st.markdown("<h1 style='text-align: center; color: #e3bf52;'>Image Recognizer</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #f79736;'>Image Classifier</h1>", unsafe_allow_html=True)
+
+st.write("**Choose an image of one of the following categories:**")
+st.write(", ".join(classes))
+
 user_img = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
 
 
@@ -52,7 +56,7 @@ if user_img is not None:
     with torch.no_grad():
         y_pred = new_model(img)
         prediction = torch.max(y_pred, 1)[1]
-        st.markdown(f'<p style="color: #71d62d; font-size: 24px;">The prediction is: {classes[prediction]}</p>',
+        st.markdown(f'<p style="color: #f79736; font-size: 24px;">The prediction is: {classes[prediction]}</p>',
             unsafe_allow_html=True
         )
         st.markdown(
@@ -69,4 +73,4 @@ if user_img is not None:
 
     with col2:
         if st.button("NO"):
-            st.error("That's your fault 🙁")
+            st.error("Well, that didn’t age well… Better luck next time! 🙃")
