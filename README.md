@@ -15,6 +15,6 @@ The app is built with **PyTorch** and deployed with **Streamlit**.
 ## 🛠️ Installation
 Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/Mendysegal20/Image-Classifier-App/tree/main.git
+git clone https://github.com/Mendysegal20/Image-Classifier-App.git
 cd Image-Classifier-App
 pip install -r requirements.txt
