@@ -18,3 +18,4 @@ Clone the repository and install dependencies:
 git clone https://github.com/Mendysegal20/Image-Classifier-App.git
 cd Image-Classifier-App
 pip install -r requirements.txt
+streamlit run app.py
